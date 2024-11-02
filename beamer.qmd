@@ -1,0 +1,75 @@
+---
+title: "Let me Introduce myself..."
+author: "Dhanushka Sanjeewa"
+date: today
+institute: "University of Nebraska-Lincoln"
+theme: UNLTheme
+format:
+  beamer:
+    theme: default
+    colortheme: beaver
+---
+
+## Introduction
+
+::::: {.columns align="center" totalwidth="8em"}
+::: {.column width="80%"}
+Hello,
+
+-   My name is **Dhanushka** and my friends call me *Dhanush*. I was born on 5^th^ of June, in 1996. I am officially from [**Sri Lanka**](https://en.wikipedia.org/wiki/Sri_Lanka). I grew in a small town called [Panadura](https://www.google.com/maps/place/Panadura,+Sri+Lanka/@6.7291197,79.8882363,13z/data=!3m1!4b1!4m6!3m5!1s0x3ae24616c169e7c3:0xd21e80c970651d56!8m2!3d6.7106361!4d79.9074262!16s%2Fm%2F02vrtzb?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D).
+
+-   Well, Its a tropical island 🏝️ located in the South Indian Ocean. Its is even called the Perl of the Indian ocean. Frankly speaking, It is a paradise. You can experience all kinds of weather conditions there. (Give it a try if you want to explore)
+
+-   Currently I am reading for my **PhD in Statistics**, at UNL. I will probably be able to graduate in 5 years from now.
+:::
+
+::: {.column width="20%" align="bottom"}
+![ME](Image01.jpg)
+:::
+:::::
+
+## My favourite Animal
+
+Honestly, I love lions.
+
+![Lion](Lion.jpg){width="250" height="600" fig-pos="H" fig-env="figure"}
+
+## Generate a plot
+
+Here we are using Iris dataset, and let's create a scatter-plot to identify the relationship between **Petal Length vs. Petal Width** for different **species**.
+
+
+
+```{r, fig.width=6, fig.height=3.5}
+
+library(dplyr)
+library(ggplot2)
+
+data("iris")
+
+# Plot using geom_text to show emojis
+ggplot(data = iris, aes(x = Petal.Length, y = Petal.Width, colour = Species)) + 
+geom_point() + 
+  labs(title = "Scatterplot of Petal Length vs. Petal Width",
+       x = "Petal Length", 
+       y = "Petal Width") +
+      theme(axis.text.x = element_text(colour = "black", size = 12, face = "bold"),                    axis.line = element_line(colour = "black", linewidth = 1), 
+        axis.title.x = element_text(colour = "red", size = 13, face = "bold"), 
+        axis.title.y = element_text(colour = "red", size = 13, face = "bold"), 
+        plot.title = element_text(colour = "black", face = "bold", hjust = 0.5, size= 15), 
+        plot.background = element_rect(fill = NULL, color = "blue"), 
+        axis.text.y = element_text(color = "black", face = "bold", size = 10), 
+        legend.text = element_text(size = 10))
+
+
+```
+
+
+
+## Curriculum Vitae
+
+[Here is the link to my CV.](https://github.com/DhanushUNL/Dhanushka_Info/blob/main/Dhanushka_CV.pdf)
+
+
+
+

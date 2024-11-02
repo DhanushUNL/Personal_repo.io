@@ -1,0 +1,98 @@
+---
+title: "Let me Introduce myself..."
+author: "Dhanushka Sanjeewa"
+date: today
+theme: solarized
+backgroundcolor: blue
+format: revealjs
+---
+
+## Introduction {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+![](Image01.jpg){fig-pos="H" fig-align="center" fig-env="figure" width="20%"}
+
+<small>
+
+<ul>
+
+<li>My name is **Dhanushka** and my friends call me *Dhanush*.</li>
+
+<li>I was born on the 5th of June, in 1996.</li>
+
+<li>I am officially from <a href="https://en.wikipedia.org/wiki/Sri_Lanka">**Sri Lanka**</a>.</li>
+
+<li>I grew up in a small town called <a href="https://www.google.com/maps/place/Panadura,+Sri+Lanka/@6.7291197,79.8882363,13z/data=!3m1!4b1!4m6!3m5!1s0x3ae24616c169e7c3:0xd21e80c970651d56!8m2!3d6.7106361!4d79.9074262!16s%2Fm%2F02vrtzb?entry=ttu">Panadura</a>.</li>
+
+<li>Well, it's a tropical island 🏝️ located in the South Indian Ocean. It's even called the Pearl of the Indian Ocean. Frankly speaking, it is a paradise. You can experience all kinds of weather conditions there. (Give it a try if you want to explore.)</li>
+
+<li>Currently, I am reading for my Masters in Statistics at UNL. I will probably be able to graduate in 5 years from now.</li>
+
+</ul>
+
+</small>
+
+## My favourite Animal {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+<p align="center">
+
+Honestly, I love lions.
+
+</p>
+
+![](Lion.jpg){fig-pos="H" fig-env="figure" fig-align="center"}
+
+## Code {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+Here we are using Iris Dataset, and let's create a scatter-plot to identify the relationship between **Petal Length vs. Petal Width** for different **species**.
+
+```{r, fig.width=6, fig.height=3.5, fig.align="center"}
+
+library(dplyr)
+library(ggplot2)
+
+data("iris")
+
+# Plot using geom_text to show emojis
+ggplot(data = iris, aes(x = Petal.Length, y = Petal.Width, colour = Species)) + 
+geom_point() + 
+  labs(title = "Scatterplot of Petal Length vs. Petal Width",
+       x = "Petal Length", 
+       y = "Petal Width") +
+      theme(axis.text.x = element_text(colour = "black", size = 12, face = "bold"),                    axis.line = element_line(colour = "purple", linewidth = 1.3), 
+        axis.title.x = element_text(colour = "red", size = 13, face = "bold"), 
+        axis.title.y = element_text(colour = "red", size = 13, face = "bold"), 
+        plot.title = element_text(colour = "black", face = "bold", hjust = 0.5, size= 15), 
+        plot.background = element_rect(fill = NULL, color = "blue"), 
+        axis.text.y = element_text(color = "black", face = "bold", size = 10), 
+        legend.text = element_text(size = 10))
+
+
+```
+
+## Curriculum Vitae {.center}
+
+```{css}
+.center h2 {
+  text-align: center;
+}
+```
+
+[Here is the link to my CV](https://github.com/DhanushUNL/Dhanushka_Info/blob/main/Dhanushka_CV.pdf)
