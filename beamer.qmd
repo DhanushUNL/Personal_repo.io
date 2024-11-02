@@ -68,7 +68,7 @@ geom_point() +
 
 ## Curriculum Vitae
 
-[Here is the link to my CV.](https://github.com/DhanushUNL/Dhanushka_Info/blob/main/Dhanushka_CV.pdf)
+[Here is the link to my CV.](https://github.com/DhanushUNL/Personal_repo.io/blob/main/Dhanushka_CV.pdf)
 
 
 
