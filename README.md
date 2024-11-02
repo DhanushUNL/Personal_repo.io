@@ -4,6 +4,6 @@ My personal github page
 
 [Myself in Beamer](beamer.pdf)
 
-[Myself in revealJS](revealJS.html)
+[Myself in revealJS](revealJS.qmd)
 
 
